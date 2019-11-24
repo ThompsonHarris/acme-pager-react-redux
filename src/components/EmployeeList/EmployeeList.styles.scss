@@ -1,0 +1,43 @@
+.employeelist {
+
+    & ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 100vh;
+
+        & li {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            
+
+            & .delete {
+                color: rgb(187, 59, 84);
+            }
+            & .update {
+                color: rgb(83, 59, 187); 
+            }
+            
+            & span {
+                width: 100%;
+                text-align: left;
+            }
+        }
+
+        & li:nth-child( odd ){
+            background-color: rgb(180, 181, 182);
+        }
+        }
+
+        & li:hover{
+            background-color: rgb(255, 128, 128);
+        }
+
+        & .clickable {
+            cursor: pointer;
+            width: 30%;
+        }
+       
+}

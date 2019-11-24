@@ -1,0 +1,43 @@
+.adduser {
+    display: flex;
+    flex-direction: row;
+    background-color:black;
+    height: 20px;
+
+        & form{
+            display: flex;
+            flex-direction: row;
+            background-color:black;
+            background-color:black;
+            justify-content: space-evenly;
+            width: 100%;
+
+            & label{
+                background-color:black;
+                color: white;
+                width: 100%;
+                text-align: left;
+                align-self: center;
+            }
+            & input{
+                text-align: left;
+                width: 100%;
+                text-align: center;
+                align-self: center;
+                background-color: black;
+                border: none;
+                color: white;
+                outline:none;
+            }
+            & button {
+                background-color: black;
+                color: white;
+                border-color: black;
+                border-width: 0;
+                cursor: pointer;
+                text-align: right;
+                width: 100px;
+
+            }
+        }
+}

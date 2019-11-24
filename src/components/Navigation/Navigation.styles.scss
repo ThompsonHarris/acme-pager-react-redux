@@ -1,0 +1,45 @@
+.navigation {
+
+    display: flex;
+    flex-direction: row;
+    background-color:black;
+    color: white;
+    
+
+        & ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            
+
+            & li{
+                width: 100%;
+
+                & a {
+                    text-decoration: none;
+                    color: white;
+
+                    & :hover{
+                        background-color:white;
+                        color: black;
+                        
+    
+                    }
+                }
+
+            }
+        }
+
+        & a {
+            text-decoration: none;
+            color: white;
+
+            & :hover{
+                background-color:white;
+                color: black;
+                
+
+            }
+        }
+}

@@ -1,6 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom'
+import App from './app'
+import store from './redux/store'
+import {Provider} from 'react-redux'
 
-const rootEl = document.querySelector('#root');
 
-ReactDOM.render(<div>Hello</div>, rootEl);
+ReactDOM.render(
+    <Provider store={store}>
+    <BrowserRouter>
+        <App/>
+    </BrowserRouter>
+    </Provider>
+    , document.querySelector('#root'));
